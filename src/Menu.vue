@@ -1,9 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/studybugs.png" style="width:25%;">
-<!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
-  <p>
-  즐겁고 행복한 하루가 {{ nickname }} 님을 기다려요!
-  </p>
+  <img alt="Vue logo" src="./assets/logo.png">
+
+  Order
+  <span>
+  전체메뉴
+  </span>
+  <span>
+  나만의 메뉴
+  </span>
+  <span>
+  홀케이크 예약
+  </span>
 
   <span> 12 * until next Reward {{ star_count }} / 12* </span>
   <p onclick="alert('공지')"> What's New </p>
@@ -19,12 +26,7 @@
       {{ item.value }}
     </li>
   </ul>
-  <p>
-    <!-- 네비게이션을 위해 router-link 컴포넌트를 사용합니다. -->
-    <!-- 구체적인 속성은 `to` prop을 이용합니다. -->
-    <!-- 기본적으로 `<router-link>`는 `<a>` 태그로 렌더링됩니다.-->
-    <router-link to="/Menu">Go to Menu</router-link>
-  </p>
+
 </template>
 
 <script>
@@ -44,7 +46,6 @@ export default {
         recommended_items: [{value:'아이스 유자 민트 티'}, {value:'더블 에스프레소 칩 프라푸치노'}],
       }
   },
-
 }
 </script>
 
